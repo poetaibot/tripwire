@@ -1,0 +1,16 @@
+[Unit]
+Description=TripWire monitoring service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=claw
+WorkingDirectory=/home/claw/.openclaw/workspace/tripwire
+ExecStart=/home/claw/.openclaw/workspace/tripwire/scripts/tripwire-start.sh
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

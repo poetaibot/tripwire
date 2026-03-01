@@ -1,0 +1,602 @@
+{
+  "watches": [
+    {
+      "id": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "type": "http_status",
+      "targetUrl": "https://example.invalid",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:20:26.879Z",
+      "maxLatencyMs": 3000,
+      "operator": "gt"
+    },
+    {
+      "id": "e0c877bb-c029-4c19-b4c1-9eb1920fe07f",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:29:21.292Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "9061809e-9dc7-47d0-83b2-3404d8bbc95f",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:29:21.297Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "3793d46f-561e-4a65-a291-e46bddd89cd7",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:29:21.300Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "1a5efcb1-58e9-4b8f-864e-3ec1b2ce1f61",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:29:21.303Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "08bb7747-eca5-4105-be69-e8e87d7ca079",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:29:21.306Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "acf9c83e-1f7a-42e2-a09c-00ea716d99cb",
+      "type": "http_status",
+      "targetUrl": "https://httpstat.us/503",
+      "webhookUrl": "https://httpbin.org/status/500",
+      "active": false,
+      "createdAt": "2026-03-01T07:31:01.584Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "4c03c6dd-5236-4eb3-b618-6c96fc7b980c",
+      "type": "http_status",
+      "targetUrl": "https://httpstat.us/503",
+      "webhookUrl": "https://httpbin.org/status/500",
+      "active": false,
+      "createdAt": "2026-03-01T07:37:12.128Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "ff3bad2a-92c9-4509-9495-bba0a227d522",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:56:32.681Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "d4853e38-fdda-4a91-beab-4ff3ff06654f",
+      "type": "http_status",
+      "targetUrl": "https://httpstat.us/503",
+      "webhookUrl": "https://httpbin.org/status/500",
+      "active": false,
+      "createdAt": "2026-03-01T07:56:35.842Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "6c3da754-bce6-427c-bae4-13f20a19cf1a",
+      "type": "json_threshold",
+      "targetUrl": "https://worldtimeapi.org/api/timezone/Etc/UTC",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:56:41.677Z",
+      "maxLatencyMs": 5000,
+      "field": "unixtime",
+      "operator": "gt",
+      "threshold": 0
+    },
+    {
+      "id": "a0e5dc34-389c-45a6-b643-2df1dae7db33",
+      "type": "page_change",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T07:56:46.502Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt",
+      "lastHash": "8d0f4e60bdb33f5d15bdd208483d21ee9bac7649cc5f55dcad3bf1920c1ce3fc"
+    },
+    {
+      "id": "03a0c08f-8cbc-4668-b851-102b21e4ab3d",
+      "type": "http_status",
+      "targetUrl": "https://httpstat.us/503",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:13:05.572Z",
+      "maxLatencyMs": 3000,
+      "operator": "gt"
+    },
+    {
+      "id": "b4b19b52-e0cf-4498-8253-c206fd8c95b5",
+      "type": "page_change",
+      "targetUrl": "https://httpbin.org/uuid",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:16:30.356Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt",
+      "lastHash": "d1d79c988fe4b805a226db1b7548ec84d51c8ea7d084c4fafe9b629612ce1078"
+    },
+    {
+      "id": "ef1e702d-74ba-4489-aeb2-b49e32f08c2e",
+      "type": "page_change",
+      "targetUrl": "https://httpbin.org/uuid",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:19:46.492Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt",
+      "lastHash": "dd13949ff3b55382e6d16a29258366c9f101f4b784e79e060b69e2c7ef4e1ff3"
+    },
+    {
+      "id": "4ee34e0e-1bfb-4afe-8818-152a3e5ea5e5",
+      "type": "json_threshold",
+      "targetUrl": "https://worldtimeapi.org/api/timezone/Etc/UTC",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:22:23.052Z",
+      "maxLatencyMs": 5000,
+      "field": "unixtime",
+      "operator": "gt",
+      "threshold": 0
+    },
+    {
+      "id": "aec06672-45dc-446c-80cf-45ee813cd424",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://httpstat.us/200?sleep=7000",
+      "active": false,
+      "createdAt": "2026-03-01T08:25:42.106Z",
+      "maxLatencyMs": 3000,
+      "operator": "gt"
+    },
+    {
+      "id": "82a12c49-5552-49ba-9660-184dfdde9e2e",
+      "type": "http_status",
+      "targetUrl": "https://example.com",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:48:18.608Z",
+      "maxLatencyMs": 5000,
+      "operator": "gt"
+    },
+    {
+      "id": "1d4085c0-bc0c-4e5b-ac7e-603dbd194540",
+      "type": "http_status",
+      "targetUrl": "https://httpstat.us/503",
+      "webhookUrl": "https://httpbin.org/status/500",
+      "active": false,
+      "createdAt": "2026-03-01T08:48:18.705Z",
+      "maxLatencyMs": 3000,
+      "operator": "gt"
+    },
+    {
+      "id": "5c959287-ca25-4e80-82f0-883a7efe928e",
+      "type": "json_threshold",
+      "targetUrl": "https://worldtimeapi.org/api/timezone/Etc/UTC",
+      "webhookUrl": "https://webhook.site/b4ce7921-8dd7-4d48-ba73-138f5c65e3b7",
+      "active": false,
+      "createdAt": "2026-03-01T08:48:18.731Z",
+      "maxLatencyMs": 5000,
+      "field": "unixtime",
+      "operator": "gt",
+      "threshold": 0
+    }
+  ],
+  "events": [
+    {
+      "id": "17da6a4c-d9c8-4659-ab3e-9d51dcedd971",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:20:35.808Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 67,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "54a9e83f-a404-408c-aa0d-c12d451a60a3",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:20:45.811Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 5,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "9773cf39-c778-4ba7-888b-ff5fc0ba6da8",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:20:55.817Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 8,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "ed5c5824-2b44-40ed-ba13-49386117ac01",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:05.824Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 5,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "65dc8e9b-7cb8-4ebd-8910-680a0c6ea46d",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:15.824Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 11,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "c44a5bc5-e382-4a1a-838b-8259d2a42673",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:25.829Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 8,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "e969ee94-bb6d-4c3a-a9b7-48e3b8be8237",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:35.833Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 11,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "efb1d557-4043-4655-a58c-e39f73f5c5be",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:45.834Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 8,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "6908258c-044e-4179-97e2-6dd4f44af0be",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:21:55.838Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 12,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "2a0e208c-b5f2-4a61-bf98-12400570783b",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:22:05.844Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 8,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "e9d8e701-9ff3-442c-a690-718274e413c0",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:22:15.846Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 11,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "4e287358-8138-4837-b43a-1996354405ef",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:22:25.852Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 7,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "beabe727-67ea-4e4e-8343-a8695ec97059",
+      "watchId": "5124ad95-09e8-48e9-b817-e5e4d3fb64db",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:22:35.859Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 9,
+        "targetUrl": "https://example.invalid"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200
+      }
+    },
+    {
+      "id": "ef393371-e247-445e-8db9-6e413be8d7ac",
+      "watchId": "acf9c83e-1f7a-42e2-a09c-00ea716d99cb",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:31:23.824Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 201,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "0baf51ce-4bf8-4b31-b7a4-bc14fd4f4e23",
+      "watchId": "acf9c83e-1f7a-42e2-a09c-00ea716d99cb",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:32:23.827Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 173,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "6e32f8bc-52dd-4a5c-8b5c-6ff45129fa03",
+      "watchId": "acf9c83e-1f7a-42e2-a09c-00ea716d99cb",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:33:23.857Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 168,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "cd8171d2-8b5e-46fd-900a-7e360c580fee",
+      "watchId": "4c03c6dd-5236-4eb3-b618-6c96fc7b980c",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:38:09.381Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 194,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "9685ce30-d244-449f-b1f2-31006dec5038",
+      "watchId": "d4853e38-fdda-4a91-beab-4ff3ff06654f",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T07:57:09.971Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 173,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "936f01d1-e8b4-4a20-ba47-8d8059a47306",
+      "watchId": "d4853e38-fdda-4a91-beab-4ff3ff06654f",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T08:02:10.115Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 168,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "39a5e3c3-7bb2-484c-a443-11a187a8cb8e",
+      "watchId": "03a0c08f-8cbc-4668-b851-102b21e4ab3d",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T08:13:16.831Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 191,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "id": "8d8f5ce3-7748-40f9-907f-03903e50bb1d",
+      "watchId": "b4b19b52-e0cf-4498-8253-c206fd8c95b5",
+      "eventType": "page_change_alert",
+      "createdAt": "2026-03-01T08:21:42.064Z",
+      "details": {
+        "targetUrl": "https://httpbin.org/uuid",
+        "previousHash": "61ad884817d0a4c1e70e09ac75eb50b6b0469248f65c65d0bd9fe6425c2751de",
+        "currentHash": "d1d79c988fe4b805a226db1b7548ec84d51c8ea7d084c4fafe9b629612ce1078"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "id": "262f49a1-686c-426e-a575-48d4205a0b01",
+      "watchId": "ef1e702d-74ba-4489-aeb2-b49e32f08c2e",
+      "eventType": "page_change_alert",
+      "createdAt": "2026-03-01T08:21:42.748Z",
+      "details": {
+        "targetUrl": "https://httpbin.org/uuid",
+        "previousHash": "9b124a657d40d33e0dcad5eab63e3c117a13e236954a3b905eb70f58129cbc85",
+        "currentHash": "dd13949ff3b55382e6d16a29258366c9f101f4b784e79e060b69e2c7ef4e1ff3"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "id": "4086e167-29ef-4a53-bd25-800950a19982",
+      "watchId": "aec06672-45dc-446c-80cf-45ee813cd424",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T08:25:42.140Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 35,
+        "targetUrl": "https://example.com"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    },
+    {
+      "id": "5155e831-6b33-4f2c-9a58-a0346ac50279",
+      "watchId": "82a12c49-5552-49ba-9660-184dfdde9e2e",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T08:48:25.689Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 53,
+        "targetUrl": "https://example.com"
+      },
+      "delivery": {
+        "ok": true,
+        "status": 200,
+        "attempts": 1
+      }
+    },
+    {
+      "id": "e3074e1e-dce0-4773-afd8-7cd64886fdf6",
+      "watchId": "1d4085c0-bc0c-4e5b-ac7e-603dbd194540",
+      "eventType": "http_status_alert",
+      "createdAt": "2026-03-01T08:48:26.234Z",
+      "details": {
+        "status": 0,
+        "latencyMs": 174,
+        "targetUrl": "https://httpstat.us/503"
+      },
+      "delivery": {
+        "ok": false,
+        "status": 0,
+        "attempts": 3
+      }
+    }
+  ]
+}

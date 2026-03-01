@@ -1,0 +1,18 @@
+[start] 2026-03-01T02:48:18-06:00 rounds=3 sleep=20
+[watches] stable=82a12c49-5552-49ba-9660-184dfdde9e2e fail=1d4085c0-bc0c-4e5b-ac7e-603dbd194540 threshold=5c959287-ca25-4e80-82f0-883a7efe928e
+[round 1] 2026-03-01T02:48:18-06:00
+events 82a12c49-5552-49ba-9660-184dfdde9e2e 0
+events 1d4085c0-bc0c-4e5b-ac7e-603dbd194540 0
+events 5c959287-ca25-4e80-82f0-883a7efe928e 0
+[round 2] 2026-03-01T02:48:38-06:00
+events 82a12c49-5552-49ba-9660-184dfdde9e2e 1
+events 1d4085c0-bc0c-4e5b-ac7e-603dbd194540 1
+events 5c959287-ca25-4e80-82f0-883a7efe928e 0
+[round 3] 2026-03-01T02:48:58-06:00
+events 82a12c49-5552-49ba-9660-184dfdde9e2e 1
+events 1d4085c0-bc0c-4e5b-ac7e-603dbd194540 1
+events 5c959287-ca25-4e80-82f0-883a7efe928e 0
+paused 82a12c49-5552-49ba-9660-184dfdde9e2e
+paused 1d4085c0-bc0c-4e5b-ac7e-603dbd194540
+paused 5c959287-ca25-4e80-82f0-883a7efe928e
+[done] 2026-03-01T02:49:19-06:00 log=/home/claw/.openclaw/workspace/tripwire/logs/synthetic-beta-2026-03-01-024818.log

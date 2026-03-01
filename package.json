@@ -1,0 +1,15 @@
+{
+  "name": "tripwire",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TripWire v1 - lightweight webhook monitoring service",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:x402": "node src/x402-server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "x402-express": "^1.1.0"
+  }
+}
