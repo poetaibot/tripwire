@@ -19,6 +19,24 @@ app.get('/health', (_req, res) => {
   res.json({ ok: true, service: 'TripWire-x402', payTo: PAY_TO, coreUrl: CORE_URL });
 });
 
+app.get('/debug/core', async (_req, res) => {
+  try {
+    const health = await fetch(`${CORE_URL}/health`);
+    const watches = await fetch(`${CORE_URL}/v1/watches`, {
+      headers: { 'x-api-key': CORE_API_KEY }
+    });
+    const watchesText = await watches.text();
+    res.json({
+      coreUrl: CORE_URL,
+      healthStatus: health.status,
+      watchesStatus: watches.status,
+      watchesPreview: watchesText.slice(0, 200)
+    });
+  } catch (e) {
+    res.status(500).json({ error: String(e) });
+  }
+});
+
 const payment = paymentMiddleware(PAY_TO, {
   'POST /x402/v1/watches': {
     price: '$0.02',
