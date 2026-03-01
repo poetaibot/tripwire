@@ -5,7 +5,7 @@ const app = express();
 app.set('trust proxy', true);
 app.use(express.json());
 
-const PAY_TO = process.env.PAY_TO || '0x62Ab5ce642772eD44317A11B879ab568b250374C';
+const PAY_TO = process.env.PAY_TO || '0x7cdeaac63efac9ef7448c2817af5d9921c7079c2';
 const PORT = Number(process.env.X402_PORT || 8790);
 const CORE_URL = process.env.CORE_URL || 'http://localhost:8787';
 const CORE_API_KEY = process.env.CORE_API_KEY || process.env.USER_API_KEY;
