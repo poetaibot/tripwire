@@ -38,6 +38,14 @@ app.get('/debug/core', async (_req, res) => {
 });
 
 const payment = paymentMiddleware(PAY_TO, {
+  'POST /x402/ping': {
+    price: '$0.001',
+    network: 'base',
+    config: {
+      description: 'TripWire paid ping test endpoint',
+      outputSchema: { type: 'object' }
+    }
+  },
   'POST /x402/v1/watches': {
     price: '$0.02',
     network: 'base',
@@ -110,6 +118,10 @@ async function proxy(req, res, path, method = req.method) {
   res.set('content-type', upstream.headers.get('content-type') || 'application/json');
   res.send(text);
 }
+
+app.post('/x402/ping', payment, async (_req, res) => {
+  res.json({ ok: true, service: 'tripwire-x402', ts: new Date().toISOString() });
+});
 
 app.post('/x402/v1/watches', payment, async (req, res) => {
   await proxy(req, res, '/v1/watches', 'POST');
