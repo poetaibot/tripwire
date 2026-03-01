@@ -38,7 +38,7 @@ app.get('/debug/core', async (_req, res) => {
 });
 
 const payment = paymentMiddleware(PAY_TO, {
-  'POST /x402/ping': {
+  'GET /x402/ping': {
     price: '$0.001',
     network: 'base',
     config: {
@@ -119,7 +119,7 @@ async function proxy(req, res, path, method = req.method) {
   res.send(text);
 }
 
-app.post('/x402/ping', payment, async (_req, res) => {
+app.get('/x402/ping', payment, async (_req, res) => {
   res.json({ ok: true, service: 'tripwire-x402', ts: new Date().toISOString() });
 });
 
